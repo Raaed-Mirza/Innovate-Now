@@ -5,15 +5,16 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: rgb(255, 255, 255);
-    background-color: rgb(28, 31, 68);
+    color: white;
+    /* background-color: rgb(28, 31, 68); */
+    background-color: #6A5837;
 }
 
 .navbar {
     position: fixed;
     width: 100%;
     height: 7vh;
-    background-color: rgba(11, 19, 43, 0.8);
+    background-color: rgba(35, 35, 26, 0.8);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     border-bottom: solid 1px rgba(255, 255, 255, 0.2);
@@ -52,7 +53,7 @@ body {
     width: 15vh;
     height: 100%;
     background-color: transparent;
-    color: white;
+    color: inherit;
     border-style: none;
     transition: 0.3s;
 }
@@ -66,7 +67,8 @@ body {
     height: 50vh;
     background-image: url("./ressources/hero-image.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    background-position-x: center;
+    /* background-attachment: fixed; */
 }
 
 .hero {
@@ -75,6 +77,8 @@ body {
     align-items: center;
     justify-content: center;
     padding-bottom: 10vh;
+    /* background-color: rgb(37, 20, 20); */
+    /* color: rgb(213, 213, 213); */
     border-top: solid 1px rgba(255, 255, 255, 0.4);
 }
 .inner-hero {
@@ -163,7 +167,19 @@ footer {
     cursor: pointer;
 }
 
-
+@media screen and (max-width: 600px) {
+    .navbar {
+        font-size: 10px;
+        justify-content: flex-end;
+    }
+    .inner-navbar {
+        width: 95%;
+    }
+    .navbar-button {
+        font-size: 10px;
+        width: 20vw;
+    }
+}
 
 /* @media screen and (max-width: 1250px) {
     .inner-navbar {
