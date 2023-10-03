@@ -64,7 +64,11 @@ body {
 
 .hero-image {
     width: 100%;
+<<<<<<< HEAD
     height: 50vh;
+=======
+    height: 70vh;
+>>>>>>> e8d6e3d13f632fed161a9ac57e124897dcd3813d
     background-image: url("./ressources/Blood\ donation.jpg");
     background-size: cover;
     background-position-x: center;
@@ -129,9 +133,6 @@ body {
     cursor: pointer;
     background-color: #D80032;
     border-color: #D80032;
-}
-.hero-button:active {
-    background-color: rgb(177, 177, 177);
 }
 
 .hero__illustration {
