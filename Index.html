@@ -2,38 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>index</title>
+    <title>Home | Company Name</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
     <!-- <link rel="icon" href="favicon.png"> -->
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="navbar">
-        <div class="navbar__inner">
-            <p>LOGO</p>
-            <div class="button-div">
-                <button class="navbar__button">Sign Up</button>
-                <button class="navbar__button">Log In</button>
+        <div class="inner-navbar">
+            <div class="navbar__logo-container">
+                <img src="./ressources/utensils-solid.svg" class="navbar-logo">
+                <h2>Company Name</h2>
+            </div>
+            <div class="navbar__buttons-container">
+                <button class="navbar-button"><h3>Sign Up</h3></button>
+                <button class="navbar-button"><h3>Log In</h3></button>
             </div>
         </div>
     </div>
-
+    <div class="hero-image"></div>
     <div class="hero">
         <div class="inner-hero">
-            <div class="inner-hero__text">
-                <h1>Cool Website Name</h1>
-                <p>What we are about, this will be a small description. Maybe a few more words than this.</p>
+            <div class="hero__title">
+                <h1>Make the world a better place</h1>
             </div>
-            <div class="inner-hero__button">
-                <button class="donate-button">Donate Now!</button>
+            <div class="hero__content">
+                <div class="hero__description">
+                    <p>We still need to implement the following: 1. Cybersecurity features, for example a secure login to access amount donated or personal information. 2. Some sort of artificial intelligence usage in the website.</p>
+                    <button class="hero-button"><h2>Donate Now</h2></button>
+                </div>
+                <div class="hero__illustration">
+                    <img class="united-nations__logo" src="./ressources/UN_emblem_blue.svg">
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="donate">
-        
+    <div class="about">
+        <div class="inner-about">
+            <div class="about__title">
+                <h1>About</h1>
+            </div>
+            <div class="about-content">
+                <p>We still need to implement the following: 1. Cybersecurity features, for example a secure login to access amount donated or personal information. 2. Some sort of artificial intelligence usage in the website.</p>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p>This is a footer, add copyright or something.</p>
+        <a href="https://github.com/Raaed-Mirza/Innovate-Now">
+            <button class="github-button"><img src="./ressources/github-seeklogo.com.svg" style="width: 5vh;"></button>
+        </a>
+    </footer>
 </body>
 </html>
