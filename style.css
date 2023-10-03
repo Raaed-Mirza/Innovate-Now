@@ -4,87 +4,158 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    background-color: rgb(53, 53, 53);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(28, 31, 68);
 }
 
 .navbar {
-    height: 7vh;
-    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(11, 19, 43, 0.8);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.navbar__inner {
+.inner-navbar {
+    width: 70%;
     height: 100%;
-    width: 80%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
 }
 
-.button-div {
+.navbar__logo-container {
+    height: 100%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: center;
+}
+.navbar-logo {
+    width: 4.5vh;
+    height: 4.5vh;
+    filter: invert(100%);
+    margin-right: 2.5vh;
 }
 
-.navbar__button {
-    margin-left: 10px;
-    height: 5vh;
-    width: 10vh;
-    border-radius: 15px;
+.navbar__buttons-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-button {
+    width: 15vh;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    border-style: none;
+    transition: 0.3s;
+}
+.navbar-button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-image {
+    width: 100%;
+    height: 50vh;
+    background-image: url("./ressources/hero-image.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero {
-    background-image: url("./ressources/hero-image.jpg");
-    background-size: cover;
     width: 100%;
-    height: 93vh;
-    background-color: rgb(110, 104, 93);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10vh;
 }
-
 .inner-hero {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.inner-hero__text {
-    width: 40%;
+    width: 70%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 10vh;
 }
 
-.inner-hero__button {
-    width: 40%;
-    height: 100%;
+.hero__title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__description {
+    width: 45%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
-
-.donate-button {
-    width: 14vw;
-    height: 7vh;
+.hero-button {
+    margin-top: 5vh;
+    width: 25vh;
+    height: 10vh;
     border-style: none;
-    border-radius: 30px;
-    background-color: rgb(167, 227, 255);
+    border: solid 1px rgb(224, 224, 224);
+    background-color: rgb(28, 31, 68);
+    color: white;
+    /* border-radius: 15px; */
+    transition: 0.3s;
+}
+.hero-button:hover {
+    cursor: pointer;
+    background-color: white;
     color: black;
 }
+.hero-button:active {
+    background-color: rgb(177, 177, 177);
+}
 
-.donate-button:hover {
-    background-color: rgb(255, 255, 255);
+.hero__illustration {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.united-nations__logo {
+    width: 90%;
+    height: 90%;
+    filter: sepia(100);
+    z-index: -99;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.github-button {
+    width: 5vh;
+    height: 5vh;
+    filter: invert(100%);
+    border-style: none;
+}
+.github-button:hover {
     cursor: pointer;
 }
